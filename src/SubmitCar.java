@@ -32,6 +32,15 @@ public class SubmitCar {
             System.out.println(e.getClass());
                     };
     }
+        for (Car com: carList             ) {
+            System.out.println(com.getCarMark() + "  " + com.move());
+
+
+        }
+
+
+
+
 }}
 
 

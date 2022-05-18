@@ -1,4 +1,6 @@
-public class Car {
+import src.CarMovementImpl;
+
+public class Car implements CarMovementImpl {
     private String carMark;
     private String carModel;
     private double motorVolume;
@@ -31,5 +33,10 @@ public class Car {
 
     public void setMotorVolume(double motorVolume) {
         this.motorVolume = motorVolume;
+    }
+
+    @Override
+    public int move() {
+        return (int)(1+Math.random() * 200);
     }
 }
